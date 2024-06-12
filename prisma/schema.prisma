@@ -31,7 +31,7 @@ model Resume {
   userId String
   user   User   @relation(fields: [userId], references: [id])
 
-  content String @db.Text
+  data Json @default("{}")
 
   analysis Analysis?
 

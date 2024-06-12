@@ -9,7 +9,6 @@ const createNewUser = async () => {
       clerkId: user.id as string,
     },
   });
-  console.log(match)
 
   if (!match) {
     console.log("Creating new user")
